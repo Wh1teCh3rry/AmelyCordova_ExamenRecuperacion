@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AmelyCordova_ExamenRecuperacion.MainPage"
-             Title="Amely Córdova Listado perros Pomerian">
+             Title="Amely Córdova Listado perros Pomeranian">
 
     <ScrollView>
         <VerticalStackLayout>
@@ -83,6 +83,63 @@
                     HeightRequest="200"
                     HorizontalOptions="Center"
                     VerticalOptions="Start"/>
+
+            <Image
+                    x:Name="ACimage11"
+                    HeightRequest="200"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"/>
+
+            <Image
+                    x:Name="ACimage12"
+                    HeightRequest="200"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"/>
+
+            <Image
+                    x:Name="ACimage13"
+                    HeightRequest="200"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"/>
+
+            <Image
+                    x:Name="ACimage14"
+                    HeightRequest="200"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"/>
+
+            <Image
+                    x:Name="ACimage15"
+                    HeightRequest="200"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"/>
+            <Image
+                    x:Name="ACimage16"
+                    HeightRequest="200"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"/>
+
+            <Image
+                    x:Name="ACimage17"
+                    HeightRequest="200"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"/>
+            <Image
+                    x:Name="ACimage18"
+                    HeightRequest="200"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"/>
+            <Image
+                    x:Name="ACimage19"
+                    HeightRequest="200"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"/>
+            <Image
+                    x:Name="ACimage20"
+                    HeightRequest="200"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"/>
+
         </VerticalStackLayout>
     </ScrollView>
 

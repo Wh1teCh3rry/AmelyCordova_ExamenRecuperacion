@@ -32,6 +32,16 @@ public partial class MainPage : ContentPage
             string imagen8 = resultado1.message[7];
             string imagen9 = resultado1.message[8];
             string imagen10 = resultado1.message[9];
+            string imagen11 = resultado1.message[10];
+            string imagen12 = resultado1.message[11];
+            string imagen13 = resultado1.message[12];
+            string imagen14 = resultado1.message[13];
+            string imagen15 = resultado1.message[14];
+            string imagen16 = resultado1.message[15];
+            string imagen17 = resultado1.message[16];
+            string imagen18 = resultado1.message[17];
+            string imagen19 = resultado1.message[18];
+            string imagen20 = resultado1.message[19];
             ACimage1.Source = imagen1;
             ACimage2.Source = imagen2;
             ACimage3.Source = imagen3;
@@ -42,6 +52,16 @@ public partial class MainPage : ContentPage
             ACimage8.Source = imagen8;
             ACimage9.Source = imagen9;
             ACimage10.Source = imagen10;
+            ACimage11.Source = imagen11;
+            ACimage12.Source = imagen12;
+            ACimage13.Source = imagen13;
+            ACimage14.Source = imagen14;
+            ACimage15.Source = imagen15;
+            ACimage16.Source = imagen16;
+            ACimage17.Source = imagen17;
+            ACimage18.Source = imagen18;
+            ACimage19.Source = imagen19;
+            ACimage20.Source = imagen20;
         }
     }
 }
