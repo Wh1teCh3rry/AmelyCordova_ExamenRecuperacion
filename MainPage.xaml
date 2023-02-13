@@ -1,22 +1,89 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AmelyCordova_ExamenRecuperacion.MainPage">
+             x:Class="AmelyCordova_ExamenRecuperacion.MainPage"
+             Title="Amely Córdova Listado perros Pomerian">
 
     <ScrollView>
-        <StackLayout>
-            <Label Text="Listado de fotografías Pomerian - Amely Córdova" FontSize="Title" Padding="30,10,30,10"/>
+        <VerticalStackLayout>
 
-            <Button Text="AC_Llamar API" Clicked="Button_Clicked"/>
+            <StackLayout Margin="10" Spacing="15">
+                <VerticalStackLayout>
+                    <Label
+                x:Name="AClabel"
+                FontSize="18"
+                HorizontalOptions="Center" />
+                </VerticalStackLayout>
 
-            <ListView x:Name="ListaDog">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <CollectionView VerticalOptions="Start" ItemsSource="{Binding Images}"/>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-        </StackLayout>
+                <VerticalStackLayout>
+                    <Button
+                x:Name="ACbtn"
+                Text="AC_Llamar API"
+                Clicked="ACButton_Clicked"
+                HorizontalOptions="Center" />
+                </VerticalStackLayout>
+            </StackLayout>
+            
+            <Image
+                    x:Name="ACimage1"
+                    HeightRequest="200"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"/>
+
+            <Image
+                    x:Name="ACimage2"
+                    HeightRequest="200"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"/>
+
+            <Image
+                    x:Name="ACimage3"
+                    HeightRequest="200"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"/>
+
+            <Image
+                    x:Name="ACimage4"
+                    HeightRequest="200"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"/>
+
+            <Image
+                    x:Name="ACimage5"
+                    HeightRequest="200"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"/>
+
+            <Image
+                    x:Name="ACimage6"
+                    HeightRequest="200"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"/>
+
+            <Image
+                    x:Name="ACimage7"
+                    HeightRequest="200"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"/>
+
+            <Image
+                    x:Name="ACimage8"
+                    HeightRequest="200"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"/>
+
+            <Image
+                    x:Name="ACimage9"
+                    HeightRequest="200"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"/>
+
+            <Image
+                    x:Name="ACimage10"
+                    HeightRequest="200"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"/>
+        </VerticalStackLayout>
     </ScrollView>
 
 </ContentPage>

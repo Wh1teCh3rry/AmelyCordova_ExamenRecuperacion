@@ -6,14 +6,9 @@ using System.Threading.Tasks;
 
 namespace AmelyCordova_ExamenRecuperacion.ACModels
 {
-    public class Message
-    {
-        public List<object> pomeranian { get; set; }
-    }
-
     public class Root
     {
         public string status { get; set; }
-        public Message message { get; set; }
+        public List<string> message { get; set; }
     }
 }

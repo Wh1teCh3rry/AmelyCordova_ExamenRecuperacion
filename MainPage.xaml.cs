@@ -13,18 +13,28 @@ public partial class MainPage : ContentPage
 		InitializeComponent();
 	}
 
-    public async void Button_Clicked(object sender, EventArgs e)
+    public async void ACButton_Clicked(object sender, EventArgs e)
     {
-        var request = new HttpRequestMessage();
-        request.RequestUri = new Uri("https://dog.ceo/api/breed/Pomeranian/images/random");
-        request.Method = HttpMethod.Get;
-        request.Headers.Add("Accept", "application/json"); var client = new HttpClient(); HttpResponseMessage response = await client.SendAsync(request);
-        if (response.StatusCode == HttpStatusCode.OK)
+        WebRequest request1 = WebRequest.Create("https://dog.ceo/api/breed/Pomeranian/images/random/10");
+        request1.Headers.Add("Accept", "application/json");
+        WebResponse response1 = request1.GetResponse();
+        using (Stream dataStream = response1.GetResponseStream())
         {
-            String content = await response.Content.ReadAsStringAsync();
-            var resultado = JsonConvert.DeserializeObject<List<Root>>(content);
-            ListaDog.ItemsSource = resultado;
+            StreamReader reader1 = new StreamReader(dataStream);
+            string responseFromServer1 = reader1.ReadToEnd();
+            responseFromServer1 = responseFromServer1.Trim();
+            var resultado1 = JsonConvert.DeserializeObject<Root>(responseFromServer1);
+            string imagen = resultado1.status;
+            ACimage1.Source = imagen;
+            ACimage2.Source = imagen;
+            ACimage3.Source = imagen;
+            ACimage4.Source = imagen;
+            ACimage5.Source = imagen;
+            ACimage6.Source = imagen;
+            ACimage7.Source = imagen;
+            ACimage8.Source = imagen;
+            ACimage9.Source = imagen;
+            ACimage10.Source = imagen;
         }
     }
 }
-
